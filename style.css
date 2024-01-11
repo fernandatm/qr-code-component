@@ -9,47 +9,45 @@
 
 body {
 	background: var(--Light-gray);	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	text-align: center;
 }
 
-main {
+.card {
 	font-family: var(--Outfit);
 	background: var(--White);
-	display: block;
-	width: 250px;
-	padding: 1em 1em;
+	max-width: 20rem;
+	padding: 1rem 1rem;
 	border-radius: 18px;
-	margin: 130px auto;
 }
 
 .qr-code {
-	width: 250px;
-	border-radius: 10px;
+	display: block;
+	max-width: 100%;
+	border-radius: 0.5rem;
 }
 
-main h1 {
+.card h1 {
 	color: var(--Dark-blue);
-	font-size: 20px;
-	text-align: center;
+	font-size: 1.75rem;
+	padding: 1rem 0;
 }
 
-main p {
+.card p {
 	color: var(--Graysh-blue);
-	font-size: 14px;
-	text-align: center;
+	font-size: 1.2rem;
 }
 
 .attribution {
 	font-family: var(--Outfit);
 	color: var(--Dark-blue);
-	font-size: 11px;
-	text-align: center;
+	font-size: 0.75rem;
 }
 
 .attribution a {
 	color: var(--Blue);
-}
-@media screen and (max-width: 480px) {
-	main {
-		margin: 100px auto;
-	}
 }
